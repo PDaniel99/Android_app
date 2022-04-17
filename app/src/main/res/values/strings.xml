@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ExpenditureRevenueManager</string>
+    <string name="partner">Partner</string>
+    <string name="value">Value</string>
+    <string name="revenue_expenditure">Revenue/Expenditure</string>
+    <string name="description">Description</string>
+    <string name="new_transaction_item">New transaction item</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_transaction_item">Edit transaction item</string>
+    <string name="number_of_transactions">Number of transactions:</string>
+    <string name="number_of_revenues">Number of revenues</string>
+    <string name="number_of_expenditures">Number of expenditures</string>
+    <string name="sum_of_revenues">Sum of revenues:</string>
+    <string name="sum_of_expenditures">Sum of expenditures:</string>
+    <string name="parner">Parner:</string>
+    <string name="descriptionChart">Description:</string>
+    <string name="valueChart">Value:</string>
+    <string name="typeChart">Type:</string>
+    <string name="top_5_expenditures">Top 5 expenditures</string>
+    <string name="top_5_revenues">Top 5 revenues</string>
+    <string name="value_dialog">Value:</string>
+    <string name="partnerDialog">Partner:</string>
+    <string name="descriptionDialog">Description:</string>
+    <string name="date">Date:</string>
+    <string name="sumOfRev">Sum of revenues</string>
+    <string name="sumOfExp">Sum of expenditures</string>
+    <string name="ratio">Ratio</string>
+    <string name="invalidDataText">Item is not added, given data was invalid!</string>
+    <string name="notificationText">Expenditures outweigh revenues!</string>
+    <string name="partner_required">Partner(requireed):</string>
+    <string name="partner_required2">Partner(required):</string>
+    <string name="value_required">Value(required):</string>
+    <string-array name="category_items">
+        <item>Expenditure</item>
+        <item>Revenue</item>
+    </string-array>
+</resources>

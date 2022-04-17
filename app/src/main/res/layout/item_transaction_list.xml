@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        >
+
+        <TextView
+            android:id="@+id/tvPartner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Kroc Kft."/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rental fee"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        >
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10000Ft"
+            />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2022.03.19"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibRemove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_delete_24"
+        />
+
+    <ImageButton
+        android:id="@+id/ibSeeStatistics"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_pie_chart_24"
+        />
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/number_of_transactions"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/not"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberOfTransactions"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/number_of_revenues"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfRevenues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberOfRevenues"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/number_of_expenditures"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfExpenditures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv3"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberOfExpenditures"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/sum_of_revenues"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSumOfRevenues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv4"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvSumOfRevenues"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/sum_of_expenditures"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSumOfExpenditures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv5"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartRev"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSumOfExpenditures" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/barChartRev"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/top_5_revenues"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            app:layout_constraintTop_toBottomOf="@+id/tv7"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+
+            />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/barChart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/top_5_expenditures"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
